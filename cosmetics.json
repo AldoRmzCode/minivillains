@@ -1,0 +1,18 @@
+{
+    "skins": [
+        {
+            "name": "player",
+            "displayName": "Default",
+            "url": "/assets/images/player.png",
+            "price": 0,
+            "description": "Tu personaje por defecto."
+        },
+        {
+            "name": "skull",
+            "displayName": "Skull",
+            "url": "/assets/images/skullPlayer.png",
+            "price": 10000,
+            "description": "The blue skull!"
+        }
+    ]
+}

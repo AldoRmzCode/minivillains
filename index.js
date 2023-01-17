@@ -1,11 +1,3 @@
-/*
-                           _ _           _   _   _        _       
- _____      _____  _ __ __| | |__   __ _| |_| |_| | ___  (_) ___  
-/ __\ \ /\ / / _ \| '__/ _` | '_ \ / _` | __| __| |/ _ \ | |/ _ \ 
-\__ \\ V  V / (_) | | | (_| | |_) | (_| | |_| |_| |  __/_| | (_) |
-|___/ \_/\_/ \___/|_|  \__,_|_.__/ \__,_|\__|\__|_|\___(_)_|\___/ 
-A game by Gautam
-*/
 const express = require("express");
 const https = require("https");
 var http = require("http");
@@ -88,7 +80,7 @@ const { v4: uuidv4 } = require("uuid");
 var passwordValidator = require("password-validator");
 var schema = new passwordValidator();
 app.use(express.json());
-app.disable("x-powered-by"); //Disable powered by header to prevent vulnerability scans against swordbattle.
+app.disable("x-powered-by"); //Disable powered by header to prevent vulnerability scans against minivillains.
 // Add properties to it
 schema
   .is()
@@ -140,11 +132,21 @@ if (production) {
 }
 
 var oldlevels = [
-	{coins: 0, scale: 0.38, evolutions: [evolutions.e1]},
+	{coins: 1000, scale: 0.38, evolutions: [evolutions.e1]},
   {coins: 2000, scale: 0.38, evolutions: [evolutions.e2]},
   {coins: 4000, scale: 0.38, evolutions: [evolutions.e3]},
   {coins: 6000, scale: 0.38, evolutions: [evolutions.e4]},
+  {coins: 6000, scale: 0.38},
+  {coins: 8000, scale: 0.38},
+  {coins: 10000, scale: 0.38},
 ];
+
+
+
+
+
+
+
 app.set("trust proxy", true);
 /*
 app.use((req, res, next) => {

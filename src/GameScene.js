@@ -42,7 +42,7 @@ class GameScene extends Phaser.Scene {
 	}
 
 	create() {
-		var map = 15000;
+		var map = 10000;
 		this.failedLoads = [];
 
         this.levels = [];
@@ -1892,13 +1892,14 @@ try {
 		*/
 		var cooldown = (this.myObj ? this.myObj.damageCooldown : 120);
 		if(this.mouseDown && !this.swordAnim.go && this.swordAnim.added == 0) {
-			this.swordAnim.go = true;
+			this.swordAnim.go = true; //false para que no se desactive animacion de espada sino hasta dar clic denuevo
 	
 
 			this.tweens.addCounter({
+				//grados que se mueve la espada al atacar
 				from: 0,
 				to: 50,
-				duration: cooldown/2,
+				duration: cooldown*2, //tiempo que dura animacion de espada al atacar (de principio a fin)
 				onUpdate:  (tween)=>
 				{
 					
@@ -1918,9 +1919,10 @@ try {
 	
 
 			this.tweens.addCounter({
+				//grados que se mueve la espada al atacar
 				from: 50,
 				to: 0,
-				duration: cooldown/2,
+				duration: cooldown*2, //tiempo que dura animacion de espada al atacar (de principio a fin)
 				onUpdate:  (tween)=>
 				{
 					this.swordAnim.added = tween.getValue();

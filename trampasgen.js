@@ -1,5 +1,5 @@
 var fs = require("fs");
-var map = 15000;
+var map = 10000;
 var trampaCount = 300;
 var tlocations = [];
 

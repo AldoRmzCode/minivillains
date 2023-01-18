@@ -30,7 +30,7 @@ Hook.success(process.env.SERVER, "Server started");
 }
 var serverState = "running";
 
-var map = 15000;
+var map = 10000;
 //var cors = require("cors");
 
 var server;
@@ -132,13 +132,16 @@ if (production) {
 }
 
 var oldlevels = [
-	{coins: 1000, scale: 0.38, evolutions: [evolutions.e1]},
-  {coins: 2000, scale: 0.38, evolutions: [evolutions.e2]},
-  {coins: 4000, scale: 0.38, evolutions: [evolutions.e3]},
-  {coins: 6000, scale: 0.38, evolutions: [evolutions.e4]},
-  {coins: 6000, scale: 0.38},
-  {coins: 8000, scale: 0.38},
-  {coins: 10000, scale: 0.38},
+	{coins: 25, scale: 0.38, evolutions: [evolutions.e1]},
+  {coins: 50, scale: 0.38, evolutions: [evolutions.e2]},
+  {coins: 100, scale: 0.38, evolutions: [evolutions.e3]},
+  {coins: 200, scale: 0.38, evolutions: [evolutions.e4]},
+  {coins: 300, scale: 0.38, evolutions: [evolutions.e5]},
+  {coins: 400, scale: 0.38, evolutions: [evolutions.e6]},
+  {coins: 500, scale: 0.38, evolutions: [evolutions.e7]},
+  {coins: 600, scale: 0.38, evolutions: [evolutions.e8]},
+  {coins: 750, scale: 0.38, evolutions: [evolutions.e9]},
+  {coins: 1000, scale: 0.38, evolutions: [evolutions.e10]},
 ];
 
 
@@ -761,7 +764,7 @@ var coins = [];
 var chests = [];
 var flyingSwords = [];
 
-var maxCoins = 2000;
+var maxCoins = 800;
 
 var maxChests = 0;
 var maxUncommonChests = 0;

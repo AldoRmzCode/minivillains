@@ -13,6 +13,20 @@
             "url": "/assets/images/skullPlayer.png",
             "price": 10000,
             "description": "The blue skull!"
+        },
+        {
+            "name": "rudo",
+            "displayName": "Rudo",
+            "url": "/assets/images/rudoPlayer.png",
+            "price": 10000,
+            "description": "The blue skull!"
+        },
+        {
+            "name": "cat",
+            "displayName": "Cat",
+            "url": "/assets/images/catPlayer.png",
+            "price": 20000,
+            "description": "miaw"
         }
     ]
 }

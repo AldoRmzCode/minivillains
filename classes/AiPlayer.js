@@ -23,9 +23,9 @@ class AiPlayer extends Player {
         this.mousePos.viewport.width = 1000;
         this.mousePos.viewport.height = 1000;
         this.chaseTime = 0;
-        //var msgs = ["beba", "mayinbu","chupetin","dayanita","jorgi","ricarda","fara","huachana","callao","padre"];
-        //var msg = msgs[Math.floor(Math.random() * msgs.length)];
-        //this.skin = msg;
+        var msgs = ["Default","rudo","cat","","","","","","",""];
+        var msg = msgs[Math.floor(Math.random() * msgs.length)];
+        this.skin = msg;
         this.movementMode = "mouse";
         
     }

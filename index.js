@@ -132,16 +132,16 @@ if (production) {
 }
 
 var oldlevels = [
-	{coins: 25, scale: 0.38, evolutions: [evolutions.e1]},
-  {coins: 50, scale: 0.38, evolutions: [evolutions.e2]},
-  {coins: 100, scale: 0.38, evolutions: [evolutions.e3]},
-  {coins: 200, scale: 0.38, evolutions: [evolutions.e4]},
-  {coins: 300, scale: 0.38, evolutions: [evolutions.e5]},
-  {coins: 400, scale: 0.38, evolutions: [evolutions.e6]},
-  {coins: 500, scale: 0.38, evolutions: [evolutions.e7]},
-  {coins: 600, scale: 0.38, evolutions: [evolutions.e8]},
-  {coins: 750, scale: 0.38, evolutions: [evolutions.e9]},
-  {coins: 1000, scale: 0.38, evolutions: [evolutions.e10]},
+	{coins: 10, scale: 0.38, evolutions: [evolutions.e1]},
+  {coins: 20, scale: 0.39, evolutions: [evolutions.e2]},
+  {coins: 35, scale: 0.40, evolutions: [evolutions.e3]},
+  {coins: 55, scale: 0.41, evolutions: [evolutions.e4]},
+  {coins: 80, scale: 0.42, evolutions: [evolutions.e5]},
+  {coins: 110, scale: 0.43, evolutions: [evolutions.e6]},
+  {coins: 145, scale: 0.44, evolutions: [evolutions.e7]},
+  {coins: 195, scale: 0.45, evolutions: [evolutions.e8]},
+  {coins: 250, scale: 0.46, evolutions: [evolutions.e9]},
+  {coins: 300, scale: 0.47, evolutions: [evolutions.e10]},
 ];
 
 

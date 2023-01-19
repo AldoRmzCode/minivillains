@@ -1118,7 +1118,7 @@ class GameScene extends Phaser.Scene {
 					); 
 			
 	
-					this.meSword.setScale(player.scale);
+					this.meSword.setScale(player.scale*1.1); //TAMAÑO DE ESPADA DE PLAYER(MUY IMPORTANTE)
 					  this.background.setTileScale(this.cameras.main.zoom, this.cameras.main.zoom);
 					this.background.displayWidth = this.cameras.main.displayWidth;
 					this.background.displayHeight = this.cameras.main.displayHeight;
@@ -1182,7 +1182,7 @@ class GameScene extends Phaser.Scene {
 						enemy.toAngle = Math.atan2(mousePos.y - ((mousePos.viewport.height) / 2), mousePos.x - ((mousePos.viewport.width) / 2)) * 180 / Math.PI + 45;
 
 						enemy.player.setScale(player.scale);
-						enemy.sword.setScale(player.scale);
+						enemy.sword.setScale(player.scale*1.1); //TAMAÑO DE ESPADA DE ENEMIGO(MUY IMPORTANTE)
 						enemy.down = player.mouseDown;
 
 						if(!player.swordInHand) enemy.sword.setVisible(false);

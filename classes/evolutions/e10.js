@@ -1,19 +1,20 @@
 const Evolution = require("./Evolution");
-class e4 extends Evolution {
+class e10 extends Evolution {
     constructor() {
         super();
-        this.name = "e4";
+        this.name = "e10";
         this.abilityDuration = 3000;
         this.abilityCooldown = 5000;
         this.subEvolutions = [];
     }
     default() {
         return {
-            speed: 0.9,
+            speed: 0.7,
             power: 1,
             resistance: 1.1,
             damage: 1.25,
             damageCooldown: 1,
+            scale: 1.15,
         };
     }
     ability() {
@@ -26,4 +27,4 @@ class e4 extends Evolution {
         };
     }
 }
-module.exports = e4
+module.exports = e10

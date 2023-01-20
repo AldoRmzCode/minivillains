@@ -442,21 +442,21 @@ class GameScene extends Phaser.Scene {
   }
 
 							this.deathRect.destroy();
-							this.deathRect = this.add.rectangle(this.canvas.width/2, this.canvas.height/2, this.canvas.width/2, this.canvas.height/1.5, 0x90EE90);
+							this.deathRect = this.add.rectangle(this.canvas.width/2, this.canvas.height/2, this.canvas.width/2, this.canvas.height/1.5, 0x8f0000);
               this.deadText.destroy();
-							this.deadText = this.add.text(this.canvas.width/2, (this.deathRect.y- (this.deathRect.height/2)), "Te apuñalaron", {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#000000"}).setOrigin(0.5);
+							this.deadText = this.add.text(this.canvas.width/2, (this.deathRect.y- (this.deathRect.height/2)), "YOU DIED", {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#ffffff"}).setOrigin(0.5);
 								this.deadText.setFontSize(Math.min(this.canvas.width/25,this.canvas.height/20));
 								this.deadText.y += this.deadText.height;
 								
 								var msgs = ["Nooooooooo", "Rest in peace", "You can do better!", "Practice makes perfect!", "Keep trying!"]
 								var msg = msgs[Math.floor(Math.random() * msgs.length)];
               this.dataText.destroy();
-								this.dataText = this.add.text(this.canvas.width/2, this.deadText.y, msg, {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#000000"}).setOrigin(0.5);
+								this.dataText = this.add.text(this.canvas.width/2, this.deadText.y, msg, {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#ffffff"}).setOrigin(0.5);
 								this.dataText.setFontSize(Math.min(this.canvas.width/40, this.canvas.height/30));
 							this.dataText.y += this.dataText.height*1.5;	
 
               this.statsText.destroy();
-              					this.statsText = this.add.text(this.canvas.width/2, this.dataText.y, "Stabbed By: "+this.dtas.killedBy+"\nCoins: "+this.myObj.coins+"\nKills: "+this.myObj.kills+"\nSurvived: "+msToTime(this.dtas.timeSurvived), {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#000000"}).setOrigin(0.5);
+              					this.statsText = this.add.text(this.canvas.width/2, this.dataText.y, "Stabbed By: "+this.dtas.killedBy+"\nCoins: "+this.myObj.coins+"\nKills: "+this.myObj.kills+"\nSurvived: "+msToTime(this.dtas.timeSurvived), {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#ffffff"}).setOrigin(0.5);
 								this.statsText.setFontSize(Math.min(this.canvas.width/35, this.canvas.height/25));
 							this.statsText.y += this.statsText.height;
 						this.playAgain.destroy();
@@ -801,7 +801,7 @@ class GameScene extends Phaser.Scene {
 							alpha: 1,
 							duration: 100,
 							ease: "Linear",
-							repeat: 0,
+							repeat: 5,  //veces que se repite la animacion de reaparecer en el mapa
 							yoyo: false
 						});
 					}, 5000 - (Date.now() - player.joinTime));
@@ -1677,8 +1677,8 @@ class GameScene extends Phaser.Scene {
 					//wait 1.5 sec
 					this.time.delayedCall(1500, () => {
 						
-						//show death screen
-						this.deathRect = this.add.rectangle(this.canvas.width/2, this.canvas.height/2, this.canvas.width/2, this.canvas.height/1.5, 0x90EE90).setAlpha(0);
+						//show death screen........................................................................................................0x(color del resctangulo)
+						this.deathRect = this.add.rectangle(this.canvas.width/2, this.canvas.height/2, this.canvas.width/2, this.canvas.height/1.5, 0x8f0000).setAlpha(0);
             this.cameras.main.ignore(this.deathRect);
 						this.tweens.add({
 							targets: this.deathRect,
@@ -1687,20 +1687,20 @@ class GameScene extends Phaser.Scene {
 							ease: "Sine2",
 							onComplete: () => {
 								window.onbeforeunload = () => {};
-										this.deadText = this.add.text(this.canvas.width/2, (this.deathRect.y- (this.deathRect.height/2)), "You got stabbed", {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#000000"}).setOrigin(0.5);
+										this.deadText = this.add.text(this.canvas.width/2, (this.deathRect.y- (this.deathRect.height/2)), "YOU DIED", {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#ffffff"}).setOrigin(0.5);
                 this.cameras.main.ignore(this.deadText);
 								this.deadText.setFontSize(Math.min(this.canvas.width/25,this.canvas.height/20));
 								this.deadText.y += this.deadText.height;
                 
 											var msgs = ["Nooooooooo", "Rest in peace", "You can do better!", "Practice makes perfect!", "Keep trying!"];
 								var msg = msgs[Math.floor(Math.random() * msgs.length)];
-								this.dataText = this.add.text(this.canvas.width/2, this.deadText.y, msg, {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#000000"}).setOrigin(0.5);
+								this.dataText = this.add.text(this.canvas.width/2, this.deadText.y, msg, {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#ffffff"}).setOrigin(0.5);
 								this.dataText.setFontSize(Math.min(this.canvas.width/40, this.canvas.height/30));
 					
 							this.dataText.y += this.dataText.height*1.5;
                  this.cameras.main.ignore(this.dataText);
 
-							this.statsText = this.add.text(this.canvas.width/2, this.dataText.y, "Stabbed By: "+this.dtas.killedBy+"\nCoins: "+this.myObj.coins+"\nKills: "+this.myObj.kills+"\nSurvived: "+msToTime(this.dtas.timeSurvived), {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#000000"}).setOrigin(0.5);
+							this.statsText = this.add.text(this.canvas.width/2, this.dataText.y, "Stabbed By: "+this.dtas.killedBy+"\nCoins: "+this.myObj.coins+"\nKills: "+this.myObj.kills+"\nSurvived: "+msToTime(this.dtas.timeSurvived), {fontFamily: "Bubblegum Sans", fontSize: "32px", color: "#ffffff"}).setOrigin(0.5);
 								this.statsText.setFontSize(Math.min(this.canvas.width/35, this.canvas.height/25));
 							this.statsText.y += this.statsText.height;
                 this.cameras.main.ignore(this.statsText);
@@ -1789,7 +1789,7 @@ class GameScene extends Phaser.Scene {
 							alpha: 1,
 							duration: 100,
 							ease: "Linear",
-							repeat: 0,
+							repeat: 5, //veces que se repite la animacion de reaparecer en el mapa
 							yoyo: false
 						});
 				},5000);

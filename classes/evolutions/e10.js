@@ -9,12 +9,12 @@ class e10 extends Evolution {
     }
     default() {
         return {
-            speed: 0.7,
+            speed: 0.6,
             power: 1,
             resistance: 1.1,
             damage: 1.25,
             damageCooldown: 1,
-            scale: 1.15,
+            scale: 2.15,
         };
     }
     ability() {

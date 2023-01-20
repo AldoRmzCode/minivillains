@@ -764,7 +764,7 @@ var coins = [];
 var chests = [];
 var flyingSwords = [];
 
-var maxCoins = 800;
+var maxCoins = 500;
 
 var maxChests = 0;
 var maxUncommonChests = 0;

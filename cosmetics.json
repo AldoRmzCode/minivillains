@@ -8,25 +8,60 @@
             "description": "Tu personaje por defecto."
         },
         {
-            "name": "skull",
-            "displayName": "Skull",
-            "url": "/assets/images/skullPlayer.png",
-            "price": 10000,
-            "description": "The blue skull!"
+            "name": "mareo",
+            "displayName": "Mareo",
+            "url": "/assets/images/mareoPlayer.png",
+            "price": 1000,
+            "description": "0_o"
         },
         {
             "name": "rudo",
             "displayName": "Rudo",
             "url": "/assets/images/rudoPlayer.png",
-            "price": 10000,
-            "description": "The blue skull!"
+            "price": 2000,
+            "description": "Así es la vida"
+        },
+        {
+            "name": "mini",
+            "displayName": "Mini",
+            "url": "/assets/images/miniPlayer.png",
+            "price": 3000,
+            "description": "mini"
         },
         {
             "name": "cat",
             "displayName": "Cat",
             "url": "/assets/images/catPlayer.png",
-            "price": 20000,
+            "price": 4000,
             "description": "miaw"
+        },
+        {
+            "name": "sad",
+            "displayName": "Sad",
+            "url": "/assets/images/sadPlayer.png",
+            "price": 5000,
+            "description": "soy yo"
+        },
+        {
+            "name": "demon",
+            "displayName": "Demon",
+            "url": "/assets/images/demonPlayer.png",
+            "price": 6000,
+            "description": "es malillo"
+        },
+        {
+            "name": "monster",
+            "displayName": "monster",
+            "url": "/assets/images/monsterPlayer.png",
+            "price": 7000,
+            "description": "aaaaaaa"
+        },
+        {
+            "name": "kmv",
+            "displayName": "K-MV",
+            "url": "/assets/images/kmvPlayer.png",
+            "price": 8000,
+            "description": "killMiniVillains"
         }
     ]
 }

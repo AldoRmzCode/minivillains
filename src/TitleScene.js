@@ -177,7 +177,7 @@ class TitleScene extends Phaser.Scene {
 
     //Titulo del juego pantalla principal
     this.done = false;
-    this.text = this.add.text(this.canvas.width / 2, 0, "Happyfor.Live", {
+    this.text = this.add.text(this.canvas.width / 2, 0, "Minivillains", {
       fontFamily: "Bubblegum Sans",
       fontSize: "64px",
       fill: "#ffffff"

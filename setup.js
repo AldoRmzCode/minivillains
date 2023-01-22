@@ -11,7 +11,7 @@ CAPTCHASECRET=6LeIewsgAAAAABWjEVCnFPR7POHFJbzZJM_OqKdQ
 CAPTCHASITE=6LeIewsgAAAAAPp9VS21fBk7VWQX3wps40gWrUWH
 
 USEFISHYSSL=false
-DATABASE_URL=postgresql://aldormzcode:OAnujqazuo7jISqE6wArpA@free-tier14.aws-us-east-1.cockroachlabs.cloud:26257/prying-cuscus-6322.defaultdb
+DATABASE_URL=postgresql://aldo:CHRzqq_1jf0VR9XDLOPaQA@free-tier14.aws-us-east-1.cockroachlabs.cloud:26257/minivillains-8263.defaultdb
 PRODUCTION=false
 SERVER=localhost
 `

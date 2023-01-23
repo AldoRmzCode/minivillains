@@ -141,7 +141,7 @@ var oldlevels = [
   {coins: 145, scale: 0.44, evolutions: [evolutions.e7]},
   {coins: 195, scale: 0.45, evolutions: [evolutions.e8]},
   {coins: 250, scale: 0.46, evolutions: [evolutions.e9]},
-  {coins: 300, scale: 0.47, evolutions: [evolutions.e10]},
+  {coins: 300, scale: 0.48, evolutions: [evolutions.e10]},
 ];
 
 

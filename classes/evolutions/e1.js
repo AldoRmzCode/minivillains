@@ -13,12 +13,12 @@ class e1 extends Evolution {
             power: 1,
             resistance: 1.1,
             damage: 1.25,
-            damageCooldown: 1,
+            damageCooldown: 1, //animacion
         };
     }
     ability() {
         return {
-            speed: 1,
+            speed: 1.2,
             power: 1,
             resistance: 1.1,
             damage: 1.25,

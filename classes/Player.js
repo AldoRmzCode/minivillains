@@ -350,7 +350,7 @@ return false;
     this.power = convert(0.25, 200, this.scale);
     this.resistance = convert(0.25, 20, this.scale);
 
-    this.damageCooldown = (50 + (this.level * 12))*2;
+    this.damageCooldown = (60 + (this.level * 30))*2; //(50 + (this.level * 12))*2;
     this.healAmount = 1;
     this.healWait = 5000;
     this.leech =1;

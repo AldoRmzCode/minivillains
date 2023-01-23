@@ -1919,7 +1919,7 @@ try {
 				//grados que se mueve la espada al atacar
 				from: 0,
 				to: 50,
-				duration: cooldown*2, //tiempo que dura animacion de espada al atacar (de principio a fin)
+				duration: cooldown/2, //tiempo que dura animacion de espada al atacar (de principio a fin)
 				onUpdate:  (tween)=>
 				{
 					
@@ -1942,7 +1942,7 @@ try {
 				//grados que se mueve la espada al atacar
 				from: 50,
 				to: 0,
-				duration: cooldown*2, //tiempo que dura animacion de espada al atacar (de principio a fin)
+				duration: cooldown/2, //tiempo que dura animacion de espada al atacar (de principio a fin)
 				onUpdate:  (tween)=>
 				{
 					this.swordAnim.added = tween.getValue();

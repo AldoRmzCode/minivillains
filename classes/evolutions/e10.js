@@ -4,7 +4,7 @@ class e10 extends Evolution {
         super();
         this.name = "e10";
         this.abilityDuration = 3000;
-        this.abilityCooldown = 5000;
+        this.abilityCooldown = 10000;
         this.subEvolutions = [];
     }
     default() {
@@ -13,13 +13,13 @@ class e10 extends Evolution {
             power: 1,
             resistance: 1.1,
             damage: 1.25,
-            damageCooldown: 6,
+            damageCooldown: 0.1,
             scale: 2.15,
         };
     }
     ability() {
         return {
-            speed: 1,
+            speed: 1.2,
             power: 1,
             resistance: 1.1,
             damage: 1.25,

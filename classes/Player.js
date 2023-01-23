@@ -17,7 +17,7 @@ class Player {
     this.name = name;
     this.health = 0;
     this.coins = 0;
-    this.pos = {x: getRandomInt(-250,250), y: getRandomInt(-250,250)};
+    this.pos = {x: getRandomInt(-(map/2),map/2), y: getRandomInt(-(map/2),map/2)};
     this.kills = 0;
     this.speed = 700;
     this.scale = 0.25;

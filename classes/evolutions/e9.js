@@ -9,7 +9,7 @@ class e9 extends Evolution {
     }
     default() {
         return {
-            speed: 0.8,
+            speed: 0.5,
             power: 1,
             resistance: 1.1,
             damage: 1.25,

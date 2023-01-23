@@ -2034,7 +2034,7 @@ try {
 			}
 			enemy.sword.angle -= enemy.swordAnim.added;
                
-
+//enemigo espada
 			enemy.sword.x = enemy.player.x + enemy.player.width / factor * Math.cos(enemy.sword.angle * Math.PI / 180);
 			enemy.sword.y = enemy.player.y + enemy.player.width / factor * Math.sin(enemy.sword.angle * Math.PI / 180);
 

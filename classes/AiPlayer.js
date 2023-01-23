@@ -28,6 +28,11 @@ class AiPlayer extends Player {
         this.skin = msg;
         this.movementMode = "mouse";
         
+
+
+//--------------------------------IA empieza (comportamientos):
+
+
     }
     tick(coins, io, levels, chests) {
       if(PlayerList.deadPlayers.includes(this.id)) {
@@ -35,10 +40,10 @@ class AiPlayer extends Player {
       } else {
 if(!this.target || !this.entityExists(this.target,this.getEntities(coins))) this.target = this.getClosestEntity(this.getEntities(coins));
       if(this.target) {
-        if(this.target.type == "player") this.chaseTime += 1;
-        if(this.target.type==="player" && Date.now() - this.lastHit > getRandomInt(300, 700)) {
+        if(this.target.type == "player") this.chaseTime += 3;
+        if(this.target.type==="player" && Date.now() - this.lastHit > getRandomInt(10, 700)) { //VELOCIDAD DE ATAQUE DE BOT (IMPORTANTE)
           
-          if(this.chaseTime > 20) {
+          if(this.chaseTime > 20) { //tiempo de persecucion
             this.target = this.getClosestEntity(coins);
             this.chaseTime = 0;
           }

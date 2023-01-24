@@ -1138,7 +1138,23 @@ llocations.forEach((l,i) => {
 					); 
 			
 	
-					this.meSword.setScale(player.scale*1.1); //TAMAÑO DE ESPADA DE PLAYER(MUY IMPORTANTE)
+
+					this.meSword.setScale(player.scale*1.2); //TAMAÑO DE ESPADA DE PLAYER(MUY IMPORTANTE)
+
+
+
+/*
+					//PARA QUE LA ESPADA DE ULTIMO NIVEL SEA 4 VECES MAS GRANDE QUE EL PLAYER (IMPORTANTE)
+
+
+					if(player.scale >= 0.48) this.meSword.setScale(player.scale*2)
+					else {this.meSword.setScale(player.scale*1.1)};
+
+*/
+
+					
+
+
 					  this.background.setTileScale(this.cameras.main.zoom, this.cameras.main.zoom);
 					this.background.displayWidth = this.cameras.main.displayWidth;
 					this.background.displayHeight = this.cameras.main.displayHeight;
@@ -1202,7 +1218,7 @@ llocations.forEach((l,i) => {
 						enemy.toAngle = Math.atan2(mousePos.y - ((mousePos.viewport.height) / 2), mousePos.x - ((mousePos.viewport.width) / 2)) * 180 / Math.PI + 45;
 
 						enemy.player.setScale(player.scale);
-						enemy.sword.setScale(player.scale*1.1); //TAMAÑO DE ESPADA DE ENEMIGO(MUY IMPORTANTE)
+						enemy.sword.setScale(player.scale*1.2); //TAMAÑO DE ESPADA DE ENEMIGO(MUY IMPORTANTE)
 						enemy.down = player.mouseDown;
 
 						if(!player.swordInHand) enemy.sword.setVisible(false);

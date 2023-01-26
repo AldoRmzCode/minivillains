@@ -1,7 +1,7 @@
 var intersects = require("intersects");
 const PlayerList = require("./PlayerList");
 const Coin = require("./Coin.js");
-const {sql} = require("../database");
+const {sql} = require("../src/database");
 function getRandomInt(min, max) {
   return min + Math.floor(Math.random() * (max - min + 1));
 }

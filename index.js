@@ -96,7 +96,7 @@ const Coin = require("./classes/Coin");
 const Chest = require("./classes/Chest");
 const AiPlayer = require("./classes/AiPlayer");
 const PlayerList = require("./classes/PlayerList");
-const { sql } = require("./database");
+const { sql } = require("./src/database");
 const { config } = require("dotenv");
 
 

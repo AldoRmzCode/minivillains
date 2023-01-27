@@ -13,7 +13,7 @@ class e10 extends Evolution {
             power: 1,
             resistance: 1.1,
             damage: 1.25,
-            damageCooldown: 0.1,
+            damageCooldown: 1,
         };
     }
     ability() {

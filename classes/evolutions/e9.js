@@ -18,7 +18,7 @@ class e9 extends Evolution {
     }
     ability() {
         return {
-            speed: 1.2,
+            speed: 1,
             power: 1,
             resistance: 1.1,
             damage: 1.25,

@@ -1130,7 +1130,7 @@ llocations.forEach((l,i) => {
 					// if(this.myObj) //console.log( this.cameras.main.zoom+" -> "+this.myObj.coins+" -> "+player.scale)
 					
 					var show = 1000;
-					show += (this.mePlayer.width*this.mePlayer.scale)*7;//VERADDERO ZOOM (IMPORTANTE)(cambiado de 5 a 10)
+					show += (this.mePlayer.width*this.mePlayer.scale)*8;//VERADDERO ZOOM (IMPORTANTE)(cambiado de 5 a 10)
 					//var oldZoom = this.cameras.main.zoom;
 					var newZoom = Math.max(this.scale.width / show, this.scale.height / show);
  					this.cameras.main.setZoom(
@@ -1452,6 +1452,8 @@ llocations.forEach((l,i) => {
 				this.hit = this.sound.add(hitsound, config);
 				var msgs = ["hitPro","hitWow","hitEasy", "hitEjected", "hitEz", "hitGg", "hitLol", "hitNice", "hitOmg", "hitVictory", "hitXd", "hitYes"];
 				//var msgs = ["epicCoin", "burgerCoin", "fresaCoin", "kekiCoin", "manzaninCoin", "burgersiCoin", "chocoCoin"];
+
+
 				var msg = msgs[Math.floor(Math.random() * msgs.length)];
 					var player = this.enemies.find(enemyPlayer => enemyPlayer.id == playerId);
 					if(player && this.sys.game.loop.actualFps >= 30) {
